@@ -1,0 +1,177 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footerTop {
+  display: flex; /* Use flexbox to align child elements side by side */
+  justify-content: space-between; /* Distribute space between elements */
+  align-items: flex-start; /* Align items to the top */
+  gap: 40px; /* Space between the two sections */
+  margin-bottom: 20px;
+}
+
+.newsletter, .contact {
+  flex: 1; /* Allow both sections to grow equally */
+  margin: 10px; /* Margin around sections */
+  min-width: 250px; /* Prevent sections from getting too narrow */
+  padding: 20px; /* Inner padding for sections */
+   /* Optional: border to distinguish sections */
+  border-radius: 5px; /* Optional: rounded corners */
+  background-color: #111; /* Optional: background for sections */
+}
+
+.newsletter h3 {
+  margin-bottom: 10px; /* Space below the heading */
+  font-size: 20px; /* Adjust heading font size */
+}
+
+.newsletter p {
+  margin-bottom: 15px; /* Space below the paragraph */
+  font-size: 14px; /* Adjust paragraph font size */
+}
+
+.subscribe {
+  display: flex; /* Flex layout for input and button */
+  align-items: center; /* Align items vertically */
+  margin-top: 10px; /* Space above subscribe section */
+}
+
+.subscribe input {
+  padding: 10px; /* Inner padding for the input */
+  font-size: 14px; /* Font size for the input */
+  width: 70%; /* Adjust the width of the input */
+  border: 1px solid #ddd; /* Border style for input */
+  border-radius: 4px; /* Rounded corners for input */
+  margin-right: 10px; /* Space between input and button */
+}
+
+.subscribe button {
+  padding: 10px 15px; /* Padding for the button */
+  font-size: 14px; /* Font size for the button */
+  background-color: #555; /* Background color for the button */
+  color: white; /* Text color for the button */
+  border: none; /* Remove border for button */
+  border-radius: 4px; /* Rounded corners for button */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+
+.separator {
+  border: 1px solid #333; /* Separator style */
+  margin: 20px 0; /* Space above and below the separator */
+}
+
+.footerBottom {
+  display: flex; /* Flex layout for the bottom section */
+  justify-content: space-between; /* Distribute space between columns */
+  gap: 20px; /* Space between columns */
+}
+
+.column {
+  flex: 1; /* Allow columns to grow equally */
+  margin: 10px; /* Margin around columns */
+  padding: 15px; /* Inner padding for columns */
+  background-color: #111; /* Optional: background for columns */
+  border-radius: 5px;
+   /* Optional: rounded corners for columns */
+}
+
+.column h3 {
+  font-size: 16px; /* Heading font size */
+  margin-bottom: 10px; /* Margin below heading */
+}
+
+.column ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+.column li {
+  font-size: 14px; /* Font size for list items */
+  margin: 5px 0; /* Margin between list items */
+}
+
+.socialIcons {
+  display: flex; /* Flex layout for social icons */
+  gap: 10px; /* Space between icons */
+  margin-bottom: 10px; /* Space below social icons */
+}
+
+.icon {
+  width: 30px; /* Set a uniform width */
+  height: 30px; /* Set a uniform height */
+}
+
+.paymentIcons {
+  display: flex; /* Flex layout for payment icons */
+  gap: 15px; /* Space between icons */
+}
+
+.currency {
+  display: flex; /* Use flexbox to align items in a row */
+  align-items: center; /* Center items vertically */
+  font-size: 14px; /* Adjust font size as needed */
+}
+
+.flag {
+  width: 20px; /* Set a uniform width for the flag */
+  height: auto; /* Keep aspect ratio */
+  margin-right: 5px; /* Space between flag and text */
+}
+
+
+.copyright {
+  text-align: center; /* Center copyright text */
+  margin-top: 20px; /* Space above copyright text */
+  font-size: 14px; /* Font size for copyright text */
+}
+.contact h3 {
+  margin-bottom: 15px; /* Space below the heading */
+  font-size: 20px; /* Adjust heading font size */
+}
+
+.contact p {
+  margin-bottom: 10px; /* Space below the paragraphs */
+  font-size: 14px; /* Adjust paragraph font size */
+}
+
+.contact span {
+  display: block; /* Make the span a block element for better alignment */
+  margin-top: 10px; /* Space above the span */
+  font-size: 12px; /* Smaller font size for the note */
+}
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .footerTop {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items */
+  }
+
+  .newsletter, .contact {
+    width: 100%; /* Full width on small screens */
+    margin: 10px 0; /* Margin on top and bottom */
+  }
+}
+
+@media (max-width: 480px) {
+  .footerBottom {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .footerList li {
+    font-size: 12px; /* Reduce font size for smaller screens */
+  }
+
+  .flag {
+    width: 20px; /* Adjust flag size for smaller screens */
+  }
+
+  .icon {
+    width: 25px; /* Adjust icon size for smaller screens */
+  }
+}
